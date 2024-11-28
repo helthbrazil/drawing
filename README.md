@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
 
+# Example
+![Exemplo](https://raw.githubusercontent.com/helthbrazil/drawing/refs/heads/main/src/assets/example.gif)
+
 ## Install
 Run the `npm install` for install the project
 
