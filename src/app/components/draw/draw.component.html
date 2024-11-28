@@ -1,0 +1,25 @@
+<div class="content">
+  <div class="card">
+    <div class="image" style="position:relative; display:inline-block;">
+      <img id="full-image" src="https://img.freepik.com/premium-photo/two-cars-side-by-side-scenic-highway-created-with-generative-ai_124507-218450.jpg?w=1380"
+        class="card-img-top" alt="Imagem de exemplo">
+
+      <!-- Canvas deve estar sobre a imagem -->
+      <canvas #canvas id="canvas"
+        width="600" height="600"
+        (mousedown)="startDrawing($event)"
+        (mousemove)="draw($event)"
+        (mouseup)="stopDrawing()"
+        (mouseleave)="stopDrawing()"
+        style="position:absolute; top: 0; left: 0; z-index: 10;"></canvas>
+    </div>
+
+    <div class="actions">
+      <button class="yellow" [class.active]="shapeType == 'rectangle'" (click)="onShapeChange('rectangle')">Retângulo</button>
+      <button class="blue" [class.active]="shapeType == 'circle'" (click)="onShapeChange('circle')">Círculo</button>
+      <button class="green" [class.active]="shapeType == 'line'" (click)="onShapeChange('line')">Linha</button>
+      <button class="action-bt" (click)="resetDrawing()">Limpar</button>
+      <button class="action-bt" (click)="undo()">Desfazer</button>
+    </div>
+  </div>
+</div>

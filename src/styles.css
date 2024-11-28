@@ -1,0 +1,8 @@
+/* Resetando o padding e usando o modelo de caixa border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
