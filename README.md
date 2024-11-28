@@ -5,6 +5,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 # Example
 ![Exemplo](https://raw.githubusercontent.com/helthbrazil/drawing/refs/heads/main/src/assets/example.gif)
 
+<a href="https://helthbrazil.github.io/drawing" target="_blank">Try yourself!</a>
+
 ## Install
 Run the `npm install` for install the project
 
